@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --orange-accent: #e86c1e;
+  --orange-bright: #f97316;
+  --bg-dark: #0a0a0a;
+  --surface-dark: #1a1a1a;
+  --border-subtle: rgba(255, 255, 255, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-dark);
+  color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange-accent);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange-bright);
+}
+
+/* Utility constraints & global resets for components */
+.glass-panel {
+  background-color: var(--surface-dark);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ffedd5, #f97316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
